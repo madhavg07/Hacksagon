@@ -1,5 +1,4 @@
-body {
-  width: 100vw;
+  body {
   margin: 0;
   padding: 0;
   font-family: 'Outfit', sans-serif;
@@ -12,7 +11,7 @@ body {
 }
 
 .navbar {
-  max-width: 100%;
+  width: 99vw;
   background: #0F4C75;
   display: flex;
   justify-content: space-between;
@@ -59,13 +58,12 @@ body {
 }
 
 .navbar-link:hover {
-  background: #FF5A05;
+  background: #59cefc;
   color: #0D0D0D;
   border-radius: 4px;
 }
 
 .container {
-  width: 100%;
   padding-top: 250px;
   margin-right: 0px;
   /* To avoid content hiding behind the fixed navbar */
@@ -74,7 +72,7 @@ body {
 
 
 .bg {
-  height: 90vh;
+  height: 99vh;
   width: 99vw;
   background-image: url("resource/abv.jpg");
   background-size: cover; /* Ensures the background image covers the entire area */
@@ -153,12 +151,12 @@ body {
 }
 
 .btn {
-  --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+  --border-color: linear-gradient(-45deg, #a600ff, #0e03aa, #00fffb);
   --border-width: 0.125em;
   --curve-size: 0.5em;
   --blur: 30px;
-  --bg: #080312;
-  --color: #afffff;
+  --bg: #afffff;
+  --color: #0d0641;
   color: var(--color);
   cursor: pointer;
   /* use position: relative; so that BG is only for .btn */
@@ -337,7 +335,7 @@ body {
 
 .level ul {
   list-style-type: square;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .qr-code {
@@ -412,19 +410,30 @@ footer {
 .footSvg{
   width: 25px;
 }
+.hamburger{
+  height: 20px;
+  width: 20px;
+  display: none;
+}
 
 @media (max-width:600px) {
   .main{
     flex-direction:column-reverse;
+   
     gap: 40px;
 
+  }
+  .ieeelogo{
+    display: flex;
+    justify-content: center;
+    padding: 0;
   }
   .ieeelogo img{
     height: 200px;
   }
   .container{
     width: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
   }
   .content{
     flex-direction: column;
@@ -436,6 +445,27 @@ footer {
     padding-right: 30px;
   }
   .intro-header{
-    font-size: 32px;
+    font-size: 26px;
+  }
+  .intro-subheader {
+    font-size: 16px;
+  }
+  .logoimg{
+    width: 20px;
+  }
+  .logotext{
+    width: 50px;
+  }
+  .navbar-menu{
+    display: none;
+  }
+  .navbar{
+    justify-content:space-between;
+    position: absolute;
+    
+  }
+  .hamburger{
+    display: flex;
+    padding-left: 60vw;
   }
 }
