@@ -462,10 +462,14 @@ footer {
   .navbar{
     justify-content:space-between;
     position: absolute;
-    
+    width: 100vw;
   }
   .hamburger{
     display: flex;
-    padding-left: 60vw;
+    padding-left: 50vw;
+  }
+  .statement{
+    margin-top: 30px;
+    height: 50px;
   }
 }
